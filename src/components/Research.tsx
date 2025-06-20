@@ -2,25 +2,25 @@ const Research = () => {
   const projects = [
     {
       id: "PR-001",
-      name: "ПРОЕКТ ГЕЛИКС",
-      status: "АКТИВЕН",
-      classification: "СОВЕРШЕННО СЕКРЕТНО",
+      name: "PROJECT HELIX",
+      status: "ACTIVE",
+      classification: "TOP SECRET",
       progress: 76,
       color: "green",
     },
     {
       id: "PR-007",
-      name: "НЕЙРАЛЬНАЯ СЕТЬ СИНАПС",
-      status: "В РАЗРАБОТКЕ",
-      classification: "ЗАСЕКРЕЧЕНО",
+      name: "NEURAL NETWORK SYNAPSE",
+      status: "IN DEVELOPMENT",
+      classification: "CLASSIFIED",
       progress: 45,
       color: "blue",
     },
     {
       id: "PR-013",
-      name: "ПРОЕКТ ФЕНИКС",
-      status: "ПРИОСТАНОВЛЕН",
-      classification: "ЗАПРЕЩЕНО",
+      name: "PROJECT PHOENIX",
+      status: "SUSPENDED",
+      classification: "FORBIDDEN",
       progress: 92,
       color: "red",
     },
@@ -30,8 +30,8 @@ const Research = () => {
     <section className="py-16 bg-gray-900 bg-opacity-50">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">
-          <span className="glitch" data-text="ИССЛЕДОВАНИЯ">
-            ИССЛЕДОВАНИЯ
+          <span className="glitch" data-text="RESEARCH">
+            RESEARCH
           </span>
         </h2>
 
@@ -58,7 +58,7 @@ const Research = () => {
 
               <div className="mb-4">
                 <div className="flex justify-between text-sm mb-1">
-                  <span>ПРОГРЕСС</span>
+                  <span>PROGRESS</span>
                   <span>{project.progress}%</span>
                 </div>
                 <div className="w-full bg-gray-800 rounded-full h-2">
@@ -72,7 +72,7 @@ const Research = () => {
               <div
                 className={`text-${project.color}-400 text-xs font-mono animate-pulse`}
               >
-                [ДОСТУП ОГРАНИЧЕН]
+                [ACCESS RESTRICTED]
               </div>
             </div>
           ))}

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "ДОБРО ПОЖАЛОВАТЬ В БУДУЩЕЕ БИОТЕХНОЛОГИЙ";
+  const fullText = "WELCOME TO THE FUTURE OF BIOTECHNOLOGY";
 
   useEffect(() => {
     let index = 0;
@@ -28,7 +28,9 @@ const Hero = () => {
               MITOTECH
             </span>
           </div>
-          <div className="text-xl text-green-600">КОРПОРАЦИЯ БИОТЕХНОЛОГИЙ</div>
+          <div className="text-xl text-green-600">
+            BIOTECHNOLOGY CORPORATION
+          </div>
         </div>
 
         {/* Typed text */}
@@ -42,10 +44,8 @@ const Hero = () => {
         {/* Status indicators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="border border-green-400 p-4 bg-black bg-opacity-50">
-            <div className="text-green-400 text-sm mb-2">
-              СТАТУС ИССЛЕДОВАНИЙ
-            </div>
-            <div className="text-2xl font-bold">АКТИВНО</div>
+            <div className="text-green-400 text-sm mb-2">RESEARCH STATUS</div>
+            <div className="text-2xl font-bold">ACTIVE</div>
             <div className="w-full bg-gray-800 rounded-full h-2 mt-2">
               <div
                 className="bg-green-400 h-2 rounded-full animate-pulse"
@@ -56,19 +56,17 @@ const Hero = () => {
 
           <div className="border border-blue-400 p-4 bg-black bg-opacity-50">
             <div className="text-blue-400 text-sm mb-2">
-              ПРОЕКТОВ В РАЗРАБОТКЕ
+              PROJECTS IN DEVELOPMENT
             </div>
             <div className="text-2xl font-bold text-blue-400">23</div>
-            <div className="text-xs text-blue-600 mt-2">РЕЖИМ СЕКРЕТНОСТИ</div>
+            <div className="text-xs text-blue-600 mt-2">CLASSIFIED MODE</div>
           </div>
 
           <div className="border border-red-400 p-4 bg-black bg-opacity-50">
-            <div className="text-red-400 text-sm mb-2">
-              УРОВЕНЬ БЕЗОПАСНОСТИ
-            </div>
-            <div className="text-2xl font-bold text-red-400">МАКСИМУМ</div>
+            <div className="text-red-400 text-sm mb-2">SECURITY LEVEL</div>
+            <div className="text-2xl font-bold text-red-400">MAXIMUM</div>
             <div className="text-xs text-red-600 mt-2 animate-pulse">
-              ДОСТУП ОГРАНИЧЕН
+              ACCESS RESTRICTED
             </div>
           </div>
         </div>

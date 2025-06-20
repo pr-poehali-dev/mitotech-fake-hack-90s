@@ -9,7 +9,7 @@ const Index = () => {
   const [visitorCount, setVisitorCount] = useState(0);
 
   useEffect(() => {
-    // Симуляция счетчика посетителей
+    // Visitor counter simulation
     const count = Math.floor(Math.random() * 50000) + 100000;
     setVisitorCount(count);
   }, []);
@@ -28,8 +28,8 @@ const Index = () => {
 
       {/* Visitor counter */}
       <div className="fixed bottom-4 right-4 bg-black border border-green-400 p-2 text-xs">
-        <div className="glitch" data-text="ПОСЕТИТЕЛИ">
-          ПОСЕТИТЕЛИ
+        <div className="glitch" data-text="VISITORS">
+          VISITORS
         </div>
         <div className="text-center text-green-400">
           {visitorCount.toLocaleString()}

@@ -14,10 +14,10 @@ const NotFound = () => {
     // Glitch effect for text
     const glitchWords = [
       "ACCESS DENIED",
-      "ДОСТУП ЗАПРЕЩЕН",
       "ERROR 404",
-      "НАРУШЕНИЕ",
       "BREACH",
+      "UNAUTHORIZED",
+      "FORBIDDEN",
     ];
     let index = 0;
 
@@ -52,28 +52,28 @@ const NotFound = () => {
 
         <div className="border border-red-400 p-6 bg-black bg-opacity-80 max-w-md mx-auto">
           <div className="text-red-400 text-sm mb-4">
-            СИСТЕМА БЕЗОПАСНОСТИ MITOTECH
+            MITOTECH SECURITY SYSTEM
           </div>
           <div className="text-red-300 mb-4">
-            Попытка доступа к защищенному ресурсу
+            Unauthorized access attempt to protected resource
           </div>
           <div className="text-red-600 text-xs font-mono mb-4">
             IP: 192.168.1.███
             <br />
             TIME: {new Date().toLocaleString("ru-RU")}
             <br />
-            STATUS: ЗАБЛОКИРОВАН
+            STATUS: BLOCKED
           </div>
 
           <a
             href="/"
             className="inline-block bg-red-900 hover:bg-red-800 border border-red-400 px-6 py-2 text-red-400 transition-colors"
           >
-            ВЕРНУТЬСЯ В СИСТЕМУ
+            RETURN TO SYSTEM
           </a>
 
           <div className="mt-4 text-red-600 text-xs animate-pulse">
-            ⚠️ Администрация уведомлена о нарушении
+            ⚠️ Administration notified of security breach
           </div>
         </div>
 

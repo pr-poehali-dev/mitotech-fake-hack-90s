@@ -33,22 +33,22 @@ const Navigation = () => {
 
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-green-300 transition-colors">
-            ГЛАВНАЯ
+            HOME
           </Link>
           <Link
             to="/contact"
             className="hover:text-green-300 transition-colors"
           >
-            КОНТАКТЫ
+            CONTACTS
           </Link>
           <Link to="/database" className="hover:text-red-400 transition-colors">
-            БАЗА ДАННЫХ
+            DATABASE
           </Link>
         </div>
 
         <div className="text-sm">
-          <div>МСК {currentTime}</div>
-          <div className="text-xs text-green-600">СИСТЕМА АКТИВНА</div>
+          <div>MSK {currentTime}</div>
+          <div className="text-xs text-green-600">SYSTEM ACTIVE</div>
         </div>
       </div>
     </nav>

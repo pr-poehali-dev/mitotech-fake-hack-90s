@@ -27,25 +27,25 @@ const Database = () => {
           <div className="border border-red-400 bg-black p-8">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-red-400 mb-2">
-                <span className="glitch" data-text="ДОСТУП ОГРАНИЧЕН">
-                  ДОСТУП ОГРАНИЧЕН
+                <span className="glitch" data-text="ACCESS RESTRICTED">
+                  ACCESS RESTRICTED
                 </span>
               </h1>
-              <div className="text-red-600 text-sm">ВНУТРЕННЯЯ БАЗА ДАННЫХ</div>
+              <div className="text-red-600 text-sm">INTERNAL DATABASE</div>
             </div>
 
             {!isBlocked ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm text-red-400 mb-2">
-                    ПАРОЛЬ ДОСТУПА:
+                    ACCESS PASSWORD:
                   </label>
                   <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className="w-full bg-black border border-red-400 p-3 text-green-400 focus:outline-none focus:border-red-300"
-                    placeholder="Введите пароль..."
+                    placeholder="Enter password..."
                     autoComplete="off"
                   />
                 </div>
@@ -54,32 +54,32 @@ const Database = () => {
                   type="submit"
                   className="w-full bg-red-900 hover:bg-red-800 border border-red-400 p-3 text-red-400 transition-colors"
                 >
-                  АВТОРИЗАЦИЯ
+                  AUTHORIZATION
                 </button>
 
                 {attempts > 0 && (
                   <div className="text-red-400 text-sm text-center animate-pulse">
-                    НЕВЕРНЫЙ ПАРОЛЬ. ПОПЫТОК ОСТАЛОСЬ: {3 - attempts}
+                    INCORRECT PASSWORD. ATTEMPTS LEFT: {3 - attempts}
                   </div>
                 )}
               </form>
             ) : (
               <div className="text-center">
                 <div className="text-red-400 text-xl font-bold mb-4 animate-pulse">
-                  ДОСТУП ЗАБЛОКИРОВАН
+                  ACCESS BLOCKED
                 </div>
                 <div className="text-red-600 text-sm mb-4">
-                  Превышен лимит попыток входа
+                  Login attempt limit exceeded
                 </div>
                 <div className="text-red-400 text-xs font-mono">
-                  СИСТЕМА БЕЗОПАСНОСТИ АКТИВИРОВАНА
+                  SECURITY SYSTEM ACTIVATED
                 </div>
               </div>
             )}
 
             <div className="mt-8 p-3 border border-yellow-400 bg-yellow-900 bg-opacity-20">
               <div className="text-yellow-400 text-xs font-mono">
-                ⚠️ ПРЕДУПРЕЖДЕНИЕ: Все попытки доступа логируются
+                ⚠️ WARNING: All access attempts are logged
               </div>
             </div>
           </div>
